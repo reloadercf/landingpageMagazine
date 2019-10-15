@@ -1,13 +1,703 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* -----------------------------------  navbar ---------------------------- */
+.logonavbar {
+  width: 140px;
+  height: 40px;
+  background: url('./assets/images/logoyoumagazine 2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 145%;
+  margin: 4px 0px 10px 0;
+  float: left;
+  
+}
+.contenedorNav{
+  position:fixed;
+   width: 100%;
+   top: 0px;
+   background: white;
+   z-index: 2;
+}
+/* -----------------------------------  componente Header ---------------------------- */
+
+.cover{
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	position: relative;
+	background-image: url('./assets/images/imagen-header-youmagazine-hombre-sosteniendo-celular.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+.cover_cover_alineacion_mx{
+	position: absolute;
+	float: left;	
+	margin: 120px 0px 0px 10px;
+	top: 0%;
+	left: 10%;
+	width: 40%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.cover_cover_alineacion_cell{
+	position: absolute;	
+	top: 5%;
+	right: 10%;
+	width: 50%;
 }
+
+
+.cover_alineacion_titulo{
+	width: 50%;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	
+}
+
+
+.cover_alineacion_titulo h1{
+	color: white;
+	text-align: justify;
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.cover_alineacion{
+	width: 60%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	top: 70%;
+	left: 10%;
+}
+
+
+.texto{
+	color:black;
+  	text-shadow: 0px 0 0 #fff, 0px 0 0 #fff, 0 0px 0 #fff, 0 0px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	font-size: 24px;
+	text-decoration: none;
+	font-weight: 400;	
+	text-align: center;
+}
+
+.cover_cover_alineacion_apps{
+ width: 60%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.cover_cover_alineacion_apps  img
+{
+	width: 40%;
+	height:auto;
+}
+
+.desHeader{
+	background: rgb(255, 255, 255);
+	width: 40%;
+	color: black;
+}
+ 
+@media only screen and (max-width: 980px) and (min-width: 821px) 
+{  
+	.cover{
+		background-image: url("./assets/images/imagen-header-youmagazine-hombre-sosteniendo-celular.jpg");
+		background-repeat: no-repeat;
+		min-height: 40rem;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+	}
+	.cover_alineacion{
+		width: 70%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 70%;
+	    right: 0;
+	}
+	.texto{
+		color:#ffffff;
+		font-size: 18px;	
+	}
+
+	.cover_alineacion_titulo{
+		width: 80%;
+		top: 45%;
+		right: 20%;
+	}
+	
+	.cover_alineacion_titulo h1{
+		color: #ffffff;
+		text-align: center;
+		font-size: 28px;
+		font-weight: bold;
+	}
+	
+	
+	.cover_cover_alineacion_mx{
+		position: absolute;
+		top: 0%;
+		right: 25%;
+		width: 50%;
+	}
+
+	.cover_cover_alineacion_apps{
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	   
+	   }
+	   
+	   .cover_cover_alineacion_apps  img
+	   {
+		   width: 30%;
+		   height:auto;
+	   }
+}  
+  
+/* Para 800px */  
+@media only screen and (max-width: 820px) and (min-width: 621px) {  
+	.cover{
+		background-image: url('./assets/images/imagen-header-youmagazine-hombre-sosteniendo-celular.jpg');
+		background-repeat: no-repeat;
+		min-height: 25rem;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+	}
+	.cover_alineacion{
+		width: 80%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 70%;
+		right: 0%;
+	}
+	.texto{
+		color:#ffffff;
+		font-size: 18px;	
+	}
+	
+	.cover_alineacion_titulo{
+		width: 70%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 45%;
+		right: 16%;
+	}
+
+	.cover_alineacion_titulo h1{
+		color: #ffffff;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.cover_cover_alineacion_apps{
+	 width: 80%;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: center;
+	
+	}
+	
+	.cover_cover_alineacion_apps  img
+	{
+		width: 30%;
+		height:auto;
+	}
+	.cover_cover_alineacion_mx{
+		position: absolute;
+		top: 25%;
+		right: 25%;
+		width: 50%;
+	}
+  
+}  
+  
+/* Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) 
+{
+	.cover{
+	
+		background-repeat: no-repeat;
+		min-height: 25rem;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+	}
+	.cover_alineacion{
+		width: 70%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 80%;
+		right: 0%;
+	}
+
+	.cover_alineacion_titulo{
+		width: 70%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 4%;
+		right: 16%;
+	}
+
+	.cover_alineacion_titulo h1{
+		color: #ffffff;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	.texto{
+		color:#ffffff;
+		font-size: 20px;	
+	}
+	
+	.cover_cover_alineacion_apps{
+	 width: 70%;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: center;
+	
+	}
+	
+	.cover_cover_alineacion_apps  img
+	{
+		width: 40%;
+		height:auto;
+	}
+	.cover_cover_alineacion_mx{
+		position: absolute;
+		top: 25%;
+		right: 15%;
+		width: 70%;
+	}
+  
+}
+
+  
+  /* Para 480px */  
+  @media only screen and (max-width: 500px) and (min-width: 341px) 
+  {
+
+	.cover_alineacion{
+		width: 100%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 70%;
+		left: 0%;		
+
+	}
+
+	.cover_alineacion_titulo{
+		width: 90%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 40%;
+		left: 0%;
+		margin: 10px;
+	}
+
+	.cover_alineacion_titulo h1{
+		color: #ffffff;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 2em;
+	}
+	.texto{
+		margin-top: 2em;
+		font-size: 18px;	
+	}
+	
+	.cover_cover_alineacion_apps{
+	width: 100%;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+	align-items: center;
+	margin-top: 1em;
+	
+	}
+	
+	.cover_cover_alineacion_apps  img
+	{
+		width: 45%;
+		height:auto;
+	}
+	.cover_cover_alineacion_mx{
+		position: absolute;
+		top: 5%;
+		left: 0%;
+		width: 90%;
+	}
+	.cover_cover_alineacion_cell{
+		display: none;
+	}
+  
+  
+  }  
+    
+
+  /* Para 320px */  
+  @media only screen and (max-width: 340px) and (min-width: 5px)  
+  {
+    .cover{
+		background-image: url('./assets/images/imagen-header-youmagazine-hombre-sosteniendo-celular.jpg');
+		background-repeat: no-repeat;
+		min-height: 20rem;
+		background-position: center center;
+		background-size: cover;
+		position: relative;
+	}
+	.cover_alineacion{
+		width: 70%;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 50%;
+		left: 15%;
+	}
+
+	
+	.texto{
+		color:black;
+		font-size: 30px;	
+	}
+	.cover_cover_alineacion_apps{
+	 width: 100%;
+	 display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+	 align-items: center;
+	
+	}
+	
+	.cover_cover_alineacion_apps  img
+	{
+		width: 40%;
+		height:auto;
+	}
+	.cover_cover_alineacion_mx{
+		position: absolute;
+		top: 30%;
+		right: 10%;
+		width: 80%;
+	}
+  
+  } 
+
+
+  /* ------------------------------- componente CARACTERISTICAS-------------------------- */
+
+.padreCARACTERISTICAS{
+	width: 100%;
+	height: 700px;
+	padding: 1% 1% 1% 1%;
+  }
+  
+  .padreCARACTERISTICAS .one{
+	width: 250px;
+	background: linear-gradient(to right bottom,#0092FF,#00FFD8);
+	color: white;
+	margin: 5% 0 10% 0;
+  }
+  .padreCARACTERISTICAS .two{
+	width: 250px;
+	background: linear-gradient(to right bottom,#FFB400,#FF00DF);
+	color: white;
+	margin: 2% 0 10% 0;
+  }
+  .padreCARACTERISTICAS .three{
+	width: 250px;
+	background: linear-gradient(to right bottom,#00CA89,#00FF04);
+	color: white;
+	margin: 0 0 10% 0;
+  }
+  .padreCARACTERISTICAS .four{
+	width: 250px;
+	background: linear-gradient(to right bottom,#E100FF,#3800FF);
+	color: white;
+	margin: 0 0 10% 0;
+  }
+  .padreCARACTERISTICAS .five{
+	width: 250px;
+	background: linear-gradient(to right bottom,#5D00FF,#0AA5C1);
+	color: white;
+  }
+  .padreCARACTERISTICAS .six{
+	width: 250px;
+	background: linear-gradient(to right bottom,#FFCC2C,#DF6400);
+	color: white;
+  }
+  .padreCARACTERISTICAS .contenedorBoton{
+	position: relative;
+  }
+  .padreCARACTERISTICAS .botonVideo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background: linear-gradient(to right bottom,#E100FF,#3800FF)
+  }
+  .padreCARACTERISTICAS .caracteristicasContent{
+	padding: 40% 0 0 0;
+  }
+  .padreCARACTERISTICAS p {
+	text-align: justify;
+	text-justify: inter-word;
+	padding: 2% 5% 2% 5%;
+	font-size: 1rem;
+  }
+  
+  .padreCARACTERISTICAS h2{
+	  font-size: 2rem;
+  }
+  
+  .padreCARACTERISTICAS h3{
+	  color: #fff;
+	  font-size: 1rem;
+  }
+
+/* ------------------------------- componente Cotizador-------------------------- */
+  .contenedorCotizador{
+    background-image: url('./assets/images/background-del-cotizador-de-youmagazine.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+.cardCotizador{
+    height: 70%;
+    width: 50%;
+    background: #fff;
+    opacity: 0.8;
+}
+.columCentral{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ------------------------------- componente Argumentos-------------------------- */
+
+
+.fondo-estadisticas {
+    
+    background: linear-gradient(to right,#0092FF, #0dc6b6, #3be9c3); 
+    position: relative;
+    height: 90vh;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 70%, 0% 90%);
+    /* background: repeating-linear-gradient(-34deg, #ffffff 0, #ffffff 30%, #00796B 0, #00796B 88%, #ffffff 0, #ffffff); 
+    /* background: repeating-linear-gradient(-38deg, #ffffff, #ffffff 20%, #00796B , #00796B 88%, #ffffff, #ffffff); */
+    font-size: 20px;
+    color: #ffffff;
+    box-sizing: border-box;
+
+}
+
+.titulo_argumentos {
+    font-family: Helvetica;
+    font-size: 30px;
+}
+
+.contenedor_argumentos {
+    width: 120px;
+    height: 120px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.colEstadisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.imagen_argumentos {
+    width: 100px;
+    height: 100px;
+}
+.iconnews_argumentos{
+   font-size: 4rem;
+}
+.textcard_argumentos{
+    padding: 2px 40px 0 40px;
+    text-align: center;
+}
+
+
+/* ------------------------------- componente Beneficios-------------------------- */
+
+.landingBeneficios{
+    height: 100%;
+    background: #ffffff;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+.Titulo_beneficio{
+    display: flex;
+    text-align: center;
+}
+ 
+.col-beneficio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rowBeneficios{
+      background: linear-gradient(to right bottom,#5D00FF,#0AA5C1,#E100FF);
+      height: auto;
+      width: 100%;
+      margin-top:2%;
+      clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+      box-sizing: border-box;
+}
+
+.Col-CardBeneficio{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 3em;
+ 
+}
+
+
+.Col-CardBeneficio .content p{
+
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.col-imagen_beneficio img{
+    width: 100%;
+    clip-path: polygon(100% 0%, 100% auto, 0% 100%, 0% auto);
+    object-fit: contain;
+}
+
+
+/* ------------------------------- componente Contextos-------------------------- */
+
+.landingPrecios{
+    height: 100vh;
+    box-sizing: border-box;
+    clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+    background: linear-gradient(to right bottom,#FFB400,#FF00DF);
+    box-sizing: border-box;
+}
+.CardPrecios{
+    margin: 1em;
+    height: 70%;
+    width: 30%;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px ;
+    box-sizing: border-box;
+}
+
+.divPrecio span{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.CardPrecios .CardBeneficiosIncluidos{
+    color: black;
+    padding:1.1em;
+    box-sizing: border-box;
+}
+.contextos{
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 3px 2px 2px 2px;
+    padding:3px 10px 5px 2px;
+}
+
+.corazon {
+
+	font-size: 5rem;
+	animation: latidos 3s infinite;
+	transform-origin: center;
+}
+
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+
+/* ------------------------------- componente Articulos-------------------------- */
+
+.articulosDetailFront{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-size: 3%;
+	}
+	.articulosDetailFront a{
+	  color: black;
+	}
+
+/* ------------------------------- componente -------------------------- */
