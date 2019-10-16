@@ -3,24 +3,26 @@ import logo from '../../../assets/images/logoyoumagazine.png'
 import celular from '../../../assets/images/aplicacion-ejemplo-iphone-x.png'
 import android from '../../../assets/images/google.png'
 import ios from '../../../assets/images/apple.png'
+import {Col,Row}  from 'antd'
 
 function Header(){
     return (
-        <div className="cover">
-        
+      <div className="cover">
+            <Row>
+              <Col>
             <img className="cover_cover_alineacion_mx" alt='Logotipo' src={logo} />
-          
-        
+            </Col>
+            <Col>
             <img className="cover_cover_alineacion_cell" alt='Descarga' src={celular} />
-          
-
+            </Col>
+            </Row>
           <div className="cover_alineacion_titulo">
             <h1>
              You Magazine es tu aplicación móvil
            </h1>
 
             <div className='desHeader'>
-              Revista, Periodico Digital, Blog ó Canal
+             <span> Revista, Periodico Digital, Blog ó Canal </span>
             </div>
           </div>
 

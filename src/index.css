@@ -102,6 +102,9 @@
 
 .desHeader{
 	background: rgb(255, 255, 255);
+	/*opacity: 0.5;*/
+	font-size: 15px;
+	text-align: center;
 	width: 40%;
 	color: black;
 }
@@ -435,35 +438,43 @@
 	width: 250px;
 	background: linear-gradient(to right bottom,#0092FF,#00FFD8);
 	color: white;
-	margin: 5% 0 10% 0;
+	padding: 3% 2% 2% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .two{
 	width: 250px;
 	background: linear-gradient(to right bottom,#FFB400,#FF00DF);
 	color: white;
-	margin: 2% 0 10% 0;
+	padding: 3% 2% 2% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .three{
 	width: 250px;
 	background: linear-gradient(to right bottom,#00CA89,#00FF04);
 	color: white;
-	margin: 0 0 10% 0;
+	padding: 3% 2% 2% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .four{
 	width: 250px;
 	background: linear-gradient(to right bottom,#E100FF,#3800FF);
 	color: white;
-	margin: 0 0 10% 0;
+	padding: 3% 2% 5% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .five{
 	width: 250px;
 	background: linear-gradient(to right bottom,#5D00FF,#0AA5C1);
 	color: white;
+	padding: 3% 2% 5% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .six{
 	width: 250px;
 	background: linear-gradient(to right bottom,#FFCC2C,#DF6400);
 	color: white;
+	padding: 3% 2% 2% 2%;
+	margin: 2% 2% 2% 2%;
   }
   .padreCARACTERISTICAS .contenedorBoton{
 	position: relative;
@@ -478,7 +489,7 @@
 	background: linear-gradient(to right bottom,#E100FF,#3800FF)
   }
   .padreCARACTERISTICAS .caracteristicasContent{
-	padding: 40% 0 0 0;
+	padding: 40% 0 5% 0;
   }
   .padreCARACTERISTICAS p {
 	text-align: justify;
@@ -512,8 +523,6 @@
 	margin-bottom: 4%;
 }
 .cardCotizador{
-    height: 70%;
-    width: 50%;
     background: #fff;
     opacity: 0.8;
 }
