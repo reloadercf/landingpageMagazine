@@ -1,35 +1,32 @@
-import React from 'react'
-import { Card,Tag } from 'antd';
+import React,{useEffect,useState} from 'react'
+import Articulo from './Articulo'
 
-let { Meta } = Card;
+function Articulos (){
 
-const Articulos = () => {
+  let stateInicial = {
+    noticias: []
+  }
+
+  let [articles,guardarArticle]=useState(stateInicial)
+
+  let consultarAPI = async()=>{
+    let url = `https://newsapi.org/v2/top-headlines?country=mx&category=technology&apiKey=0285998a7c0c4d59a4d98f7f55361c5f`
+    let respuesta = await fetch(url)
+    let noticias = await respuesta.json()
+    guardarArticle({ noticias: noticias.articles })
+  }
+
+  useEffect(
+    ()=>{
+      consultarAPI()
+    },[]
+  )
+
+
     return ( 
-        <div className='articulosDetailFront'>
-          <Card
-              hoverable
-              style={{ width:310}}
-              cover={<img src="http://sarfarazshaikh.com/wp-content/uploads/2017/08/team.jpg" alt='Article imagen'/>}
-            >
-              <Meta title="YouMagazine como tu estrategia digital" description={<span><Tag color='geekblue'>Palabra Clave</Tag><Tag color='geekblue'>Palabra Clave 2</Tag></span>} />
-            </Card>
-            
-          <Card
-              hoverable
-              style={{ width:310}}
-              cover={<img src="http://sarfarazshaikh.com/wp-content/uploads/2017/08/team.jpg" alt='Article imagen'/>}
-            >
-              <Meta title="YouMagazine como tu estrategia digital" description={<span><Tag color='geekblue'>Palabra Clave</Tag><Tag color='geekblue'>Palabra Clave 2</Tag></span>} />
-            </Card>
-            
-          <Card
-              hoverable
-              style={{ width:310}}
-              cover={<img src="http://sarfarazshaikh.com/wp-content/uploads/2017/08/team.jpg" alt='Article imagen'/>}
-            >
-              <Meta title="YouMagazine como tu estrategia digital" description={<span><Tag color='geekblue'>Palabra Clave</Tag><Tag color='geekblue'>Palabra Clave 2</Tag></span>} />
-            </Card>
-        </div>
+       <Articulo
+       articles={articles}
+       />
      );
 }
  
