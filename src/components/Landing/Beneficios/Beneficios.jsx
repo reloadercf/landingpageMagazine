@@ -15,7 +15,7 @@ function CardBeneficios() {
                 </div>
             </Col>
             <Col xxl={6} xl={6} md={6} sm={24} xs={24} className="col-imagen_beneficio" >
-            <Icon type="dashboard"  style={{fontSize:'10rem', color:'#fff'}} />
+            <Icon type="dashboard"  style={{fontSize:'9rem', color:'#fff'}} className="Imagen-beneficio" />
             </Col>
         </Row>
     );
@@ -27,7 +27,7 @@ let Beneficios =()=> {
          
             <Row type="flex" justify="space-around" align="middle" >
                 <Col xll={24} xl={24} md={24} sm={24} xs={24}>
-                    <h2>Por que una APP se adapta a mi estrategia Digital<Icon type="question" /> </h2>
+                    <h2 align="center"><Icon type="question" rotate={180} />Por qué una APP se adapta a mi estrategia Digital<Icon type="question" /> </h2>
                 </Col>
             </Row>
             <CardBeneficios/>
