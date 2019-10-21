@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card,Tag,Icon } from 'antd';
+import { Card,Tag,Icon,Row,Col } from 'antd';
 
 let { Meta } = Card;
 
@@ -8,7 +8,7 @@ function Noticia({ noticia }){
 
     let imagen = (urlToImage) ?
         <div className='card-image'>
-            <img src={urlToImage} alt={title} style={{width:'70%'}} />
+            <img src={urlToImage} alt={title} style={{ width: '100%'}} />
         </div>
         : null
 

@@ -841,11 +841,23 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 	font-size: 3%;
 }
 
 .articulosDetailFront a {
 	color: black;
+}
+/* Para Smart Phone */
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+
+	.articulosDetailFront {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 3%;
+	}
 }
 
 /* ------------------------------- componente -------------------------- */
