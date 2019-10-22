@@ -1,4 +1,36 @@
 /* -----------------------------------  navbar ---------------------------- */
+.Estilo_Header{
+	width: 100%;
+}
+header nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	background: #fff;
+}
+.menu_bar{
+	display: none;
+}
+header ul{
+	overflow: hidden;
+	list-style: none;
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	color:#000000;
+	padding:20px;
+	display: block;
+	text-decoration: none;
+}
+header ul li span{
+	margin-right:10px;
+}
+header nav ul li a:hover{
+	background: #347474;
+}
+
 .logonavbar {
 	width: 140px;
 	height: 40px;
@@ -7,9 +39,7 @@
 	background-size: 100% 145%;
 	margin: 4px 0px 10px 0;
 	float: left;
-
 }
-
 .contenedorNav {
 	position: fixed;
 	width: 100%;
@@ -17,7 +47,54 @@
 	background: white;
 	z-index: 2;
 }
+/* -----------------------------------  Nav Responsive ---------------------------- */
+@media only screen and (max-width: 800px) {
+header nav{
+	position: fixed;
+	width: 60%;
+	height: 100%;
+	margin: 0;
+	z-index: 2;
+}
+header nav ul li{
+	display:block ;
+	float:none;
+	border-bottom:1px solid rgba(255,255,255,.3);
+}
+.menu_bar{
+	display: block;
+	height: 100%;
+	background:#fff ;
+}
+.menu_bar .bt-menu{
+	display:block;
+	padding:20px;
+	background:#fff;
+	color:#000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 25px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.menu_bar span{
+	display: flex;
+	align-items: center;
+	float: right;
+}
+.logonavbar {
+	width: 135px;
+	height: 35px;
+	background: url('./assets/images/logoyoumagazine 2.png');
+	background-repeat: no-repeat;
+	background-size: 100% 145%;
+	margin: 4px 5px 10px 10px;
+	padding:20px;
+	float: left;
 
+}
+}
 /* -----------------------------------  componente Header ---------------------------- */
 
 .cover {

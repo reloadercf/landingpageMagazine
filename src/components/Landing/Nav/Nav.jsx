@@ -1,27 +1,37 @@
 import React from 'react'
-import {Menu} from 'antd';
+import { Menu, Icon } from 'antd';
 
+/* function main(){
+  $('menu_bar').click(function(){
+      $('nav').toggle();
+  });
+} */
 
-function Nav(){
-    return(
-        <div className='contenedorNav'>
-            <div className="logonavbar" />
-        <Menu
-         theme="aliyunTheme"
-        //theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['1']}
-        style={{ lineHeight: '64px'}}
-      >
-        <Menu.Item key="1">Home</Menu.Item>
-        <Menu.Item key="2">Caracterisitcas</Menu.Item>
-        <Menu.Item key="3">Cotiza</Menu.Item>
-        <Menu.Item key="4">Novedades</Menu.Item>
-        <Menu.Item key="5">Estrategia</Menu.Item>
-        <Menu.Item key="6">Articulos</Menu.Item>
-        <Menu.Item key="7">Iniciar Seción</Menu.Item>
-      </Menu>
+function Nav() {
+  return (
+    <div>
+      <head>
+        <title>Menu</title>
+      </head>
+      <div>
+        <header>
+          <div className="menu_bar">
+            <a href="#" className="bt-menu"><span><Icon type="unordered-list" /></span>Menu</a>
+          </div>
+          <nav className="Estilo_Nav">
+            <ul>
+              <li><a><span><Icon type="home" /></span>Home</a></li>
+              <li><a><span><Icon type="tags" /></span>Caracteristicas</a></li>
+              <li><a><span><Icon type="shopping" /></span>Cotiza</a></li>
+              <li><a><span><Icon type="star" /></span>Novedades</a></li>
+              <li><a><span><Icon type="radar-chart" /></span>Estrategia</a></li>
+              <li><a><span><Icon type="read" /></span>Artículos</a></li>
+              <li><a><span><Icon type="user" /></span>Iniciar Sesión</a></li>
+            </ul>
+          </nav>
+        </header>
       </div>
-    )
+    </div>
+  )
 }
 export default Nav
