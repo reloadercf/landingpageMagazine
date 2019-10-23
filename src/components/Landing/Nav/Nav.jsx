@@ -1,25 +1,17 @@
 import React from 'react'
 import { Menu, Icon } from 'antd';
-
-/* function main(){
-  $('menu_bar').click(function(){
-      $('nav').toggle();
-  });
-} */
-
+import logo from '../../../assets/images/logoyoumagazine 2.png'
+import { Link } from 'react-router-dom';
 function Nav() {
   return (
-    <div>
-      <head>
-        <title>Menu</title>
-      </head>
-      <div>
+      <div className="Estilo_Header">
         <header>
           <div className="menu_bar">
-            <a href="#" className="bt-menu"><span><Icon type="unordered-list" /></span>Menu</a>
+            <a  className="bt-menu"><span><Icon type="unordered-list" /></span>Menu</a>
           </div>
           <nav className="Estilo_Nav">
             <ul>
+              <li><img src={logo} className="EstiloLogo"/></li>
               <li><a><span><Icon type="home" /></span>Home</a></li>
               <li><a><span><Icon type="tags" /></span>Caracteristicas</a></li>
               <li><a><span><Icon type="shopping" /></span>Cotiza</a></li>
@@ -31,7 +23,7 @@ function Nav() {
           </nav>
         </header>
       </div>
-    </div>
+    
   )
 }
 export default Nav
